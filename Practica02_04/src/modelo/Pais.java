@@ -17,23 +17,23 @@ import javax.persistence.Id;
 public class Pais implements Serializable 
 {
     @Id
-    private int id;
+    private Long id;
     private String nombre;
     private String nacionalidad;
-    private int numHabitantes;
+    private Long numHabitantes;
 
-    public Pais(int id, String nombre, String nacionalidad, int numHabitantes) {
+    public Pais(Long id, String nombre, String nacionalidad, Long numHabitantes) {
         this.id = id;
         this.nombre = nombre;
         this.nacionalidad = nacionalidad;
         this.numHabitantes = numHabitantes;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -53,11 +53,11 @@ public class Pais implements Serializable
         this.nacionalidad = nacionalidad;
     }
 
-    public int getNumHabitantes() {
+    public Long getNumHabitantes() {
         return numHabitantes;
     }
 
-    public void setNumHabitantes(int numHabitantes) {
+    public void setNumHabitantes(Long numHabitantes) {
         this.numHabitantes = numHabitantes;
     }
 

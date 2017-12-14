@@ -28,11 +28,11 @@ public class Principal {
     public static void main(String[] args) {
         // TODO code application logic here
         
-       Pais p = new Pais(593,"Ecuador","Ecuatoriana",140000);
+       Pais p = new Pais(Long.parseLong("593"),"Ecuador","Ecuatoriana",Long.parseLong("140000"));
        GestionDato gD= new GestionDato();
        gD.persistirPais(p);
-        VentanaPrincipal v = new VentanaPrincipal("Torneo Mundial",gD);
-        v.setVisible(true);
+        //VentanaPrincipal v = new VentanaPrincipal("Torneo Mundial",gD);
+        //v.setVisible(true);
     }
     
 }

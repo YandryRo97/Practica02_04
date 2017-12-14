@@ -22,7 +22,7 @@ import modelo.Torneo;
  */
 public class GestionDato {
     
-    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("Persistencia02PU");
+    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("Practica02_04PU");
     
     public boolean persistirEquipo(Equipo e) {
         boolean retorno=false;

@@ -17,13 +17,13 @@ import javax.persistence.Id;
 public class Equipo implements Serializable 
 {
     @Id
-    private int id;
+    private Long id;
     private int numJugadores;
     private Pais pais;
     private Torneo torneo;
     private Grupo grupo;
 
-    public Equipo(int id, int numJugadores, Pais pais, Torneo torneo, Grupo grupo) {
+    public Equipo(Long id, int numJugadores, Pais pais, Torneo torneo, Grupo grupo) {
         this.id = id;
         this.numJugadores = numJugadores;
         this.pais = pais;
@@ -31,14 +31,15 @@ public class Equipo implements Serializable
         this.grupo = grupo;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
+   
    
 
     public int getNumJugadores() {
