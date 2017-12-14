@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica02_04.modelo;
+package modelo;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -14,13 +14,14 @@ import javax.persistence.Id;
  * @author PC-MATIC
  */
 @Entity
-public class Pais implements Serializable 
+public class Jugador implements Serializable 
 {
     @Id
     private Long id;
     private String nombre;
-    private String nacionalidad;
-    private Long numHabitantes;
+    private String apellido;
+    private Pais pais;
+    private Equipo equipo;
 
     public Long getId() {
         return id;
@@ -38,25 +39,36 @@ public class Pais implements Serializable
         this.nombre = nombre;
     }
 
-    public String getNacionalidad() {
-        return nacionalidad;
+    public String getApellido() {
+        return apellido;
     }
 
-    public void setNacionalidad(String nacionalidad) {
-        this.nacionalidad = nacionalidad;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
-    public Long getNumHabitantes() {
-        return numHabitantes;
+   
+    public Pais getPais() {
+        return pais;
     }
 
-    public void setNumHabitantes(Long numHabitantes) {
-        this.numHabitantes = numHabitantes;
+    public void setPais(Pais pais) {
+        this.pais = pais;
+    }
+
+    public Equipo getEquipo() {
+        return equipo;
+    }
+
+    public void setEquipo(Equipo equipo) {
+        this.equipo = equipo;
     }
 
     @Override
     public String toString() {
-        return "Pais{" + "id=" + id + ", nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", numHabitantes=" + numHabitantes + '}';
+        return "Jugador{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", pais=" + pais + ", equipo=" + equipo + '}';
     }
+
+    
     
 }

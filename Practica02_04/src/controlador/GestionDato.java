@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica02_04.controlador;
+package controlador;
 
 import java.util.List;
-import practica02_04.modelo.Equipo;
-import practica02_04.modelo.Estadio;
-import practica02_04.modelo.Grupo;
-import practica02_04.modelo.Jugador;
-import practica02_04.modelo.Pais;
-import practica02_04.modelo.Torneo;
+import modelo.Equipo;
+import modelo.Estadio;
+import modelo.Grupo;
+import modelo.Jugador;
+import modelo.Pais;
+import modelo.Torneo;
 
 /**
  *

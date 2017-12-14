@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica02_04.modelo;
+package modelo;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -14,12 +14,12 @@ import javax.persistence.Id;
  * @author PC-MATIC
  */
 @Entity
-public class Torneo implements Serializable 
+public class Grupo implements Serializable 
 {
     @Id
     private Long id;
-    private String fechaIns;
-    private Estadio estadio;
+    private String nombre;
+    private int numeroEqui;
 
     public Long getId() {
         return id;
@@ -29,25 +29,25 @@ public class Torneo implements Serializable
         this.id = id;
     }
 
-    public String getFechaIns() {
-        return fechaIns;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setFechaIns(String fechaIns) {
-        this.fechaIns = fechaIns;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public Estadio getEstadio() {
-        return estadio;
+    public int getNumeroEqui() {
+        return numeroEqui;
     }
 
-    public void setEstadio(Estadio estadio) {
-        this.estadio = estadio;
+    public void setNumeroEqui(int numeroEqui) {
+        this.numeroEqui = numeroEqui;
     }
 
     @Override
     public String toString() {
-        return "Torneo{" + "id=" + id + ", fechaIns=" + fechaIns + ", estadio=" + estadio + '}';
+        return "Grupo{" + "id=" + id + ", nombre=" + nombre + ", numeroEqui=" + numeroEqui + '}';
     }
     
 }

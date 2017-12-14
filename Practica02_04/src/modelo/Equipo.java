@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica02_04.modelo;
+package modelo;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -14,14 +14,14 @@ import javax.persistence.Id;
  * @author PC-MATIC
  */
 @Entity
-public class Jugador implements Serializable 
+public class Equipo implements Serializable 
 {
     @Id
     private Long id;
-    private String nombre;
-    private String apellido;
+    private int numJugadores;
     private Pais pais;
-    private Equipo equipo;
+    private Torneo torneo;
+    private Grupo grupo;
 
     public Long getId() {
         return id;
@@ -31,23 +31,14 @@ public class Jugador implements Serializable
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public int getNumJugadores() {
+        return numJugadores;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNumJugadores(int numJugadores) {
+        this.numJugadores = numJugadores;
     }
 
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-   
     public Pais getPais() {
         return pais;
     }
@@ -56,19 +47,25 @@ public class Jugador implements Serializable
         this.pais = pais;
     }
 
-    public Equipo getEquipo() {
-        return equipo;
+    public Torneo getTorneo() {
+        return torneo;
     }
 
-    public void setEquipo(Equipo equipo) {
-        this.equipo = equipo;
+    public void setTorneo(Torneo torneo) {
+        this.torneo = torneo;
+    }
+
+    public Grupo getGrupo() {
+        return grupo;
+    }
+
+    public void setGrupo(Grupo grupo) {
+        this.grupo = grupo;
     }
 
     @Override
     public String toString() {
-        return "Jugador{" + "id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", pais=" + pais + ", equipo=" + equipo + '}';
+        return "Equipo{" + "id=" + id + ", numJugadores=" + numJugadores + ", pais=" + pais + ", torneo=" + torneo + ", grupo=" + grupo + '}';
     }
-
-    
     
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package practica02_04.modelo;
+package modelo;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
@@ -14,13 +14,13 @@ import javax.persistence.Id;
  * @author PC-MATIC
  */
 @Entity
-public class Estadio implements Serializable 
+public class Pais implements Serializable 
 {
     @Id
     private Long id;
     private String nombre;
-    private String ciudad;
-    private double capacidad;
+    private String nacionalidad;
+    private Long numHabitantes;
 
     public Long getId() {
         return id;
@@ -38,25 +38,25 @@ public class Estadio implements Serializable
         this.nombre = nombre;
     }
 
-    public String getCiudad() {
-        return ciudad;
+    public String getNacionalidad() {
+        return nacionalidad;
     }
 
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
+    public void setNacionalidad(String nacionalidad) {
+        this.nacionalidad = nacionalidad;
     }
 
-    public double getCapacidad() {
-        return capacidad;
+    public Long getNumHabitantes() {
+        return numHabitantes;
     }
 
-    public void setCapacidad(double capacidad) {
-        this.capacidad = capacidad;
+    public void setNumHabitantes(Long numHabitantes) {
+        this.numHabitantes = numHabitantes;
     }
 
     @Override
     public String toString() {
-        return "Estadio{" + "id=" + id + ", nombre=" + nombre + ", ciudad=" + ciudad + ", capacidad=" + capacidad + '}';
+        return "Pais{" + "id=" + id + ", nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", numHabitantes=" + numHabitantes + '}';
     }
     
 }

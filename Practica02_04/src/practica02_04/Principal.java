@@ -7,13 +7,13 @@ package practica02_04;
 
 import java.util.ArrayList;
 import java.util.List;
-import practica02_04.controlador.GestionDato;
-import practica02_04.modelo.Equipo;
-import practica02_04.modelo.Estadio;
-import practica02_04.modelo.Grupo;
-import practica02_04.modelo.Jugador;
-import practica02_04.modelo.Pais;
-import practica02_04.modelo.Torneo;
+import controlador.GestionDato;
+import modelo.Equipo;
+import modelo.Estadio;
+import modelo.Grupo;
+import modelo.Jugador;
+import modelo.Pais;
+import modelo.Torneo;
 import practica02_04.vista.VentanaPrincipal;
 
 /**

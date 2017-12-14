@@ -12,8 +12,8 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
-import practica02_04.controlador.EventoVentanaPrincipal;
-import practica02_04.controlador.GestionDato;
+import controlador.EventoVentanaPrincipal;
+import controlador.GestionDato;
 
 
 
