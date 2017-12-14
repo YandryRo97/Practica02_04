@@ -1,5 +1,5 @@
 
-package practica02_04.vista;
+package vista;
 
 /**
  *

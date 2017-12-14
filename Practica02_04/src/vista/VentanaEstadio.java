@@ -1,4 +1,4 @@
-package practica02_04.vista;
+package vista;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -14,7 +14,7 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JInternalFrame;
-import 
+import controlador.GestionDato;
 
 /**
  *

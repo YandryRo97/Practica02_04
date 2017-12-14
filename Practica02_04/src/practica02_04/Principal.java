@@ -14,7 +14,7 @@ import modelo.Grupo;
 import modelo.Jugador;
 import modelo.Pais;
 import modelo.Torneo;
-import practica02_04.vista.VentanaPrincipal;
+import vista.VentanaPrincipal;
 
 /**
  *

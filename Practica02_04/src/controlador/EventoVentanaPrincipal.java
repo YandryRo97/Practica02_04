@@ -7,7 +7,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import practica02_04.vista.VentanaPrincipal;
+import vista.VentanaPrincipal;
 
 /**
  *
