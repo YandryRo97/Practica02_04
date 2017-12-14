@@ -17,19 +17,29 @@ import javax.persistence.Id;
 public class Equipo implements Serializable 
 {
     @Id
-    private Long id;
+    private int id;
     private int numJugadores;
     private Pais pais;
     private Torneo torneo;
     private Grupo grupo;
 
-    public Long getId() {
+    public Equipo(int id, int numJugadores, Pais pais, Torneo torneo, Grupo grupo) {
+        this.id = id;
+        this.numJugadores = numJugadores;
+        this.pais = pais;
+        this.torneo = torneo;
+        this.grupo = grupo;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
+
+   
 
     public int getNumJugadores() {
         return numJugadores;

@@ -28,15 +28,9 @@ public class Principal {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        List<Equipo> eL = new ArrayList<Equipo>();
-        List<Estadio> esL = new ArrayList<Estadio>();
-        List<Grupo> gL = new ArrayList<Grupo>();
-        List<Jugador> jL = new ArrayList<Jugador>();
-        List<Pais> pL = new ArrayList<Pais>();
-        List<Torneo> tL = new ArrayList<Torneo>();
-       
-        
-        GestionDato gD = new GestionDato(eL, esL, gL, jL, pL, tL);
+       Pais p = new Pais(593,"Ecuador","Ecuatoriana",140000);
+       GestionDato gD= new GestionDato();
+       gD.persistirPais(p);
         VentanaPrincipal v = new VentanaPrincipal("Torneo Mundial",gD);
         v.setVisible(true);
     }
